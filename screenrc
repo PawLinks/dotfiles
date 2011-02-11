@@ -1,0 +1,29 @@
+multiuser on
+acladd mikesmullin,gduquesnay,stayce
+vbell on
+term screen-256color
+
+hardstatus string "%1 "
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+# Default screens
+screen -t git       0
+screen -t vim       1
+screen -t webrick   2
+screen -t pgsql     3
+
+# Set encoding to UTF-8 to match the terminal
+defutf8 on
+
+## Skip the pointless startup message
+startup_message off
+
+## Call shells 'shell' in the bal at the bottom
+shelltitle "shell"
+
+## Don't say 'Wuff Wuff' every time the process beeps
+vbell_msg ""
+
+## Change default scrollback value for new windows
+defscrollback 10000  # default: 100
