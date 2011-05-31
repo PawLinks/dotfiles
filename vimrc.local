@@ -55,7 +55,6 @@ command -bar -nargs=1 OpenURL :!open <args> 2>&1 >/dev/null &
 " Set minium window size
 set wmh=0
 
-" Mapeamos las teclas + y - para que nos maximice o minimice la ventana actual
 if bufwinnr(1)
   map + <C-W>_
   map - <C-W>=
@@ -70,6 +69,9 @@ endif
 nmap t% <C-W>T
 nmap td :tabclose<CR>
 nmap tn :tabnew<CR>
+
+map <leader>b :BufExplorer<cr>
+
 
 
 " Paste from X clipboard to vim

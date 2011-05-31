@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  "git://github.com/astashov/vim-ruby-debugger.git",
   "git://github.com/msanders/snipmate.vim.git",
   "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/timcharper/textile.vim.git",
@@ -19,12 +18,18 @@ git_bundles = [
   "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/tsaleh/vim-tcomment.git",
   "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/mileszs/ack.vim.git"
+  "git://github.com/mileszs/ack.vim.git",
+  "https://github.com/godlygeek/tabular.git",
+  "https://github.com/kana/vim-textobj-user.git",
+  "https://github.com/nelstrom/vim-textobj-rubyblock.git",
+  "git://git.wincent.com/command-t.git",
+  "https://github.com/markabe/bufexplorer.git",
+  "git://gist.github.com/287147.git"
 ]
 
 vim_org_scripts = [
   ["IndexedSearch", "7062",  "plugin"],
-  ["gist",          "12732", "plugin"],
+  # ["gist",          "12732", "plugin"],
   ["jquery",        "12107", "syntax"],
 ]
 
